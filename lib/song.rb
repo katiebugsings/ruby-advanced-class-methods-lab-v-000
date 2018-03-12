@@ -43,6 +43,7 @@ def self.new_from_filename(filename)
   song = self.new
   song.name = split_string[1]
   song.artist_name = split_string[0]
+  song
 end
 
 
