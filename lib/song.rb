@@ -38,7 +38,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  split_string = filename.split(" - ")  
+  split_string = filename.split(" - ") 
+  binding.pry 
   song = self.new
   name = self.new
   song.name = name
