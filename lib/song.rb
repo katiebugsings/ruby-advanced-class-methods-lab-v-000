@@ -39,11 +39,10 @@ end
 
 def self.new_from_filename(filename)
   split_string = filename.split(" - ")
-  binding.pry 
+  split_string[1].slice!(".mp3")
   song = self.new
-  name = self.new
-  song.name = name
-  song.artist_name = artist
+  song.name = split_string[1]
+  song.artist_name = split_string[0]
 end
 
 
